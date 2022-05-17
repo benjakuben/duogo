@@ -1,8 +1,8 @@
 package main
 
 import (
-	"jakuben/duogo/internal/app/graphql/schema"
-	"jakuben/duogo/internal/pkg/handler"
+	"github.com/benjakuben/duogo/internal/app/graphql/schema"
+	"github.com/benjakuben/duogo/internal/pkg/handler"
 
 	"github.com/aws/aws-lambda-go/lambda"
 )
