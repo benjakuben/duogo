@@ -26,19 +26,19 @@ type Resolver struct{}
 
 // Todos : Resolver function for the "Todo" query
 func (r *Resolver) Todos() *[]*Todo {
-	//   db := db.Connect()
-	//   defer db.Close()
+	db := db.Connect()
+	defer db.Close()
 	todos := []*Todo{}
-	//   db.Select(&todos, "SELECT * FROM todos")
+	db.Select(&todos, "SELECT * FROM todos")
 	return &todos
 }
 
 // Todo : Resolver function for the "Todo" query
 func (r *Resolver) Todo(args struct{ ID graphql.ID }) *Todo {
-	//   db := db.Connect()
-	//   defer db.Close()
+	db := db.Connect()
+	defer db.Close()
 	todo := &Todo{}
-	//   db.Get(&todo, "SELECT * FROM todos WHERE id=$1", args.ID)
+	db.Get(&todo, "SELECT * FROM todos WHERE id=$1", args.ID)
 	return todo
 }
 
