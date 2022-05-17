@@ -1,8 +1,10 @@
-import "github.com/<user>/<reponame>/internal/app/graphql/todo"
+package schema
+
+import "github.com/benjakuben/duogo/internal/app/graphql/todo"
 
 // QueryResolver : Query Resolver
 type QueryResolver struct {
-  *todo.Resolver
+	*todo.Resolver
 }
 
 var Schema = `

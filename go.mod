@@ -18,5 +18,7 @@ require (
 require (
 	github.com/go-kit/kit v0.12.0
 	github.com/graph-gophers/graphql-go v1.4.0
+	github.com/jmoiron/sqlx v1.3.5
+	github.com/lib/pq v1.10.6
 	github.com/lithammer/shortuuid/v3 v3.0.7
 )
